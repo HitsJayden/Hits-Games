@@ -2,4 +2,14 @@
 body {background-color: aliceblue;}
 h1   {color: lightblue;}
 p    {color: red;}
+
+header {
+  background-color: #666;
+  padding: 1px;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}
+
+
 </style> 
