@@ -49,10 +49,9 @@ $activation_code = hash('sha256',rand(0,1000));
 	}
 }
 ?>
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<link rel="stylesheet" type="text/css" href="style.css"/>
+<link rel="stylesheet" type="text/css" href="signin system/style.css"/>
 <title>Login System in Php and Mysql</title>
 </head>
 <body>
