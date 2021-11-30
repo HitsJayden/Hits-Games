@@ -69,4 +69,4 @@ $activation_code = hash('sha256',rand(0,1000));
 		<span class="text"><?php if(isset($error)){ echo $error ;}?></span>
 	</div>
 </body>
-</html>
+	</html>
