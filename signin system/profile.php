@@ -28,4 +28,4 @@ $row=mysqli_fetch_array($result);
 		<a href="signin system/deleteaccount.php"><button type="submit">Delete Account</button></a>
 	</div>
 </body>
-</html>
+	</html>
