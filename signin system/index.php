@@ -1,3 +1,28 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="signin system/style.css"/>
+<title>Login System in Php and Mysql</title>
+</head>
+<body>
+	<a href="signin system/login.php"><button class="loginbutton" type="submit">SignIn</button></a>
+	<div id="section">
+		<h1>SignUp Form</h1>
+		<form method="post" action="index.php">
+		<input type="text" name="name" placeholder="name"/>
+		<input type="text" name="username" placeholder="username"/>
+		<input type="email" name="email" placeholder="email"/>
+		<input type="password" name="password" placeholder="password" />
+		<button type="submit" name="submit">SignUp</button><br>
+		<span class="text"><?php if(isset($message)) {echo $message;}?></span>
+		<span class="text"><?php if(isset($error)){ echo $error ;}?></span>
+	</div>
+</body>
+	</html>
+
+
+
+
+
 <?php
 session_start();
 $error="";
@@ -50,23 +75,4 @@ $activation_code = hash('sha256',rand(0,1000));
 }
 ?>
 
-<html>
-<head>
-<link rel="stylesheet" type="text/css" href="signin system/style.css"/>
-<title>Login System in Php and Mysql</title>
-</head>
-<body>
-	<a href="signin system/login.php"><button class="loginbutton" type="submit">SignIn</button></a>
-	<div id="section">
-		<h1>SignUp Form</h1>
-		<form method="post" action="index.php">
-		<input type="text" name="name" placeholder="name"/>
-		<input type="text" name="username" placeholder="username"/>
-		<input type="email" name="email" placeholder="email"/>
-		<input type="password" name="password" placeholder="password" />
-		<button type="submit" name="submit">SignUp</button><br>
-		<span class="text"><?php if(isset($message)) {echo $message;}?></span>
-		<span class="text"><?php if(isset($error)){ echo $error ;}?></span>
-	</div>
-</body>
-	</html>
+
