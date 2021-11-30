@@ -61,10 +61,9 @@ if(isset($_POST['submit']))
 }
 
 ?>
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<link rel="stylesheet" type="text/css" href="style.css"/>
+<link rel="stylesheet" type="text/css" href="signin system/style.css"/>
 <title>Login System in Php and Mysql</title>
 </head>
 <body>
