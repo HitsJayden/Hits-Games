@@ -55,7 +55,7 @@ $activation_code = hash('sha256',rand(0,1000));
 <title>Login System in Php and Mysql</title>
 </head>
 <body>
-	<a href="login.php"><button class="loginbutton" type="submit">SignIn</button></a>
+	<a href="signin system/login.php"><button class="loginbutton" type="submit">SignIn</button></a>
 	<div id="section">
 		<h1>SignUp Form</h1>
 		<form method="post" action="index.php">
