@@ -27,10 +27,9 @@ else{
 }
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<link rel="stylesheet" type="text/css" href="style.css"/>
+<link rel="stylesheet" type="text/css" href="signin system/style.css"/>
 <title>Login System in Php and Mysql</title>
 </head>
 <body>
@@ -40,13 +39,13 @@ else{
 		die();
 	}
 	?>
-	<a href="logout.php"><button class="loginbutton" type="submit">Logout</button></a>
+	<a href="sigin system/logout.php"><button class="loginbutton" type="submit">Logout</button></a>
 	<div id="section">
 		<form method="post" action="">
 		<h1>Edit Password</h1>
 		<input type="password" name="newpassword" placeholder="newpassword"/>
 		<input type="password" name="confirmpassword" placeholder="confirmpassword"/>
-		<a href="changepassword.php"><button type="submit" name="submit">Change Password</button></a><br><br><br><br>
+		<a href="signin system/changepassword.php"><button type="submit" name="submit">Change Password</button></a><br><br><br><br>
 		<span style="color:white;"><?php if(isset($error)){echo $error;}?></span>
 		</form>
 	</div>
