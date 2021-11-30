@@ -1,7 +1,7 @@
 <?php
 session_start();
 ?>
-<!DOCTYPE html>
+
 <html>
 <body>
 
@@ -12,7 +12,7 @@ session_unset();
 // destroy the session 
 session_destroy(); 
 
-header('Location:login.php');
+header('Location:signin system/login.php');
 ?>
 
 </body>
