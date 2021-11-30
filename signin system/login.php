@@ -60,11 +60,11 @@ if($count==0)
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="style.css"/>
+<link rel="stylesheet" type="text/css" href="signin system/style.css"/>
 <title>Login System in Php and Mysql</title>
 </head>
 <body>
-	<a href="index.php"><button class="loginbutton" type="submit">SignUp</button></a>
+	<a href="signin system/index.php"><button class="loginbutton" type="submit">SignUp</button></a>
 	<div id="section">
 		<h1>SignIn Form</h1>
 		<form method="post" action="login.php">
