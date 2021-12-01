@@ -10,17 +10,17 @@ const hbs = require('hbs');
 const MongoClient = require('mongodb').MongoClient;
 const passport = require('passport');
 const Strategy = require('passport-local').Strategy;
-const authUtils = require('./utils/auth');
+const authUtils = require('./sigin system/utils/auth');
 const session = require('express-session');
 const flash = require('connect-flash');
 // --------------------------------------------------
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+var indexRouter = require('./signin system/routes/index');
+var usersRouter = require('./signin system/routes/users');
 
 // Add new routes
 // --------------------------------------------------
-const authRouter = require('./routes/auth');
+const authRouter = require('./signin system/routes/auth');
 // --------------------------------------------------
 
 var app = express();
