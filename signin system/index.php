@@ -1,3 +1,4 @@
+<html>
 <?php
 
 session_start();
@@ -47,3 +48,4 @@ if(isset($_SESSION['userID'])){
 <?php
 include "signin system/footer.php";
 ?>
+</html>
