@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap");
+/*   color variables */
+/*   border radius */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background: url(img/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav {
+  background-color: #3700b3;
+  position: fixed;
+  width: 100vw;
+  -webkit-box-sizing: 0 0 10px #c5cae9;
+          box-sizing: 0 0 10px #c5cae9;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+  margin: 0 2rem;
+}
+
+.nav__listlogo {
+  list-style: none;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.nav__listlogo img {
+  width: 80px;
+  height: auto;
+  padding: 3px;
+}
+
+.nav__listitem {
+  list-style: none;
+  font-weight: bold;
+  position: relative;
+  padding: 1.5rem 1rem;
+  cursor: pointer;
+}
+
+.nav__listitem::after {
+  content: "";
+  width: 0;
+  height: .3rem;
+  border-radius: 0.2rem;
+  position: absolute;
+  left: 1rem;
+  bottom: .8rem;
+  background-color: #bb8cfc;
+  -webkit-transition: width 200ms ease-in-out;
+  transition: width 200ms ease-in-out;
+}
+
+.nav__listitem:hover::after, .nav__listitem:focus::after {
+  width: 70%;
+}
+
+.nav__listitem:hover ul,
+.nav__listitem:focus ul {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav__listitemdrop {
+  position: absolute;
+  top: 4rem;
+  left: -1rem;
+  -webkit-box-shadow: 0 0 5px #c5cae9;
+          box-shadow: 0 0 5px #c5cae9;
+  background-color: #283593;
+  border-radius: 0.2rem;
+  width: 12rem;
+  padding: .75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: .5rem;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+}
+
+.nav__listitemdrop li {
+  list-style: none;
+  padding: .5rem 1rem;
+  border-radius: 0.2rem;
+  -webkit-transition: background-color 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out;
+}
+
+.nav__listitemdrop li:hover, .nav__listitemdrop li:focus {
+  background-color: #bb8cfc;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */
