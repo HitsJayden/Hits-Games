@@ -1,2 +1,16 @@
 
- <iframe src="https://shsgames.github.io/g/c42ef5ef/slope" height="200" width="300" title="Slope"></iframe>
+  From slope/index.html/<iframe src="https://shsgames.github.io/g/c42ef5ef/slope" height="200" width="300" title="Slope"></iframe>
+ 
+ 
+ 
+  From style/style.css/(body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+})
+
+
+
+
+  From /
