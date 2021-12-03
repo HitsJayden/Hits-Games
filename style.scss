@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+/*   color variables */
+$clr-primary: #3700b3;
+$clr-primary-dark: #283593;
+$clr-hover: #bb8cfc;
+$clr-hover-darker: #6200b3;
+$clr-gray300: #c5cae9;
+
+/*   border radius */
+$radius: 0.2rem;
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	background: url(img/bg.jpg);
+	background-size: cover;
+	background-position: center;
+	font-family: "Montserrat", sans-serif;
+}
+
+.nav {
+	background-color: $clr-primary;
+	position: fixed;
+	width: 100vw;
+	box-sizing: 0 0 10px $clr-gray300;
+
+	&__list {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		gap: 2rem;
+		margin: 0 2rem;
+
+		&logo {
+			list-style: none;
+			margin-right: auto;
+			cursor: pointer;
+
+			img {
+				width: 80px;
+				height: auto;
+				padding: 3px;
+			}
+		}
+		&item {
+			list-style: none;
+			font-weight: bold;
+			position: relative;
+			padding: 1.5rem 1rem;
+			cursor: pointer;
+
+			&::after {
+				content: "";
+				width: 0;
+				height: .3rem;
+				border-radius: $radius;
+				position: absolute;
+				left: 1rem;
+				bottom: .8rem;
+				background-color: $clr-hover;
+				transition: width 200ms ease-in-out;
+			}
+
+			&:hover::after,
+			&:focus::after {
+				width: 70%;
+			}
+
+			&:hover ul,
+			&:focus ul {
+				opacity: 1;
+				visibility: visible;
+			}
+
+			&drop {
+				position: absolute;
+				top: 4rem;
+				left: -1rem;
+				box-shadow: 0 0 5px $clr-gray300;
+				background-color: $clr-primary-dark;
+				border-radius: $radius;
+				width: 12rem;
+				padding: .75rem;
+				display: flex;
+				flex-direction: column;
+				gap: .5rem;
+				opacity: 0;
+				visibility: hidden;
+				transition: opacity 200ms ease-in-out;
+
+				li {
+					list-style: none;
+					padding: .5rem 1rem;
+					border-radius: $radius;
+					transition: background-color 200ms ease-in-out;
+
+					&:hover,
+					&:focus {
+						background-color: $clr-hover;
+					}
+				}
+			}
+		}
+	}
+
+	a {
+		color: #fff;
+		text-decoration: none;
+	}
+}
